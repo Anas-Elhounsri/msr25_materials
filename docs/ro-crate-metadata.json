@@ -1,0 +1,98 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "description": "RO-Crate Metadata File Descriptor (this file)"
+        },
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "DataType": "Paper",
+            "author": [
+                {
+                    "@id": "#daniel_garijo"
+                },
+                {
+                    "@id": "#anas_el_hounsri"
+                }
+            ],
+            "description": "This is a summary of the paper.",
+            "hasPart": [
+                {
+                    "@id": "#repositories-extraction"
+                },
+                {
+                    "@id": "#metadata-adoption"
+                },
+                {
+                    "@id": "#markdown-generator"
+                },
+                {
+                    "@id": "#dataset_for_\"good_practice_versus_reality:_a_landscape_analysis_of_research_software_metadata_adoption_in_european_open_science_clusters\""
+                },
+                {
+                    "@id": "ro-crate-preview.html"
+                }
+            ],
+            "name": "Good practice versus reality: A landscape analysis of Research Software metadata adoption in European Open Science Clusters"
+        },
+        {
+            "@id": "#daniel_garijo",
+            "@type": "Person",
+            "description": "Distinguished Researcher",
+            "name": "Daniel Garijo",
+            "position": [
+                "Co-Author"
+            ]
+        },
+        {
+            "@id": "#anas_el_hounsri",
+            "@type": "Person",
+            "description": "Researcher at OEG",
+            "name": "Anas El Hounsri",
+            "position": [
+                "Author"
+            ]
+        },
+        {
+            "@id": "#repositories-extraction",
+            "@type": "SoftwareApplication",
+            "description": "This repository is responsible for extracting the repositories links from the clusters",
+            "installUrl": "https://github.com/Anas-Elhounsri/Repositories-Extraction"
+        },
+        {
+            "@id": "#metadata-adoption",
+            "@type": "SoftwareApplication",
+            "description": "This repository for quantifying and computing the results of the analysis",
+            "installUrl": "https://github.com/Anas-Elhounsri/Metadata-Adoption-Quantify"
+        },
+        {
+            "@id": "#markdown-generator",
+            "@type": "SoftwareApplication",
+            "description": "This repository for creating tables in markdown format of the results from Metadata-Adoption",
+            "installUrl": "https://github.com/Anas-Elhounsri/Markdown-Generator"
+        },
+        {
+            "@id": "#dataset_for_\"good_practice_versus_reality:_a_landscape_analysis_of_research_software_metadata_adoption_in_european_open_science_clusters\"",
+            "@type": "Dataset",
+            "description": "This dataset was collected using this GitHub repository Repositories-Extraction, collected the links to the repositories from each scientific cluster, and using the GitHub repository Metadata-Extraction, we were able to extract the relevant information needed to answer our research questions (RQ):\n\n\n\nRQ1:\u00a0How do communities describe Research Software metadata in their code repositories?\n\nRQ2:\u00a0What is the adoption of archival infrastructures across disciplines?\n\nRQ3:\u00a0How do software projects adopt versioning?\n\nRQ4:\u00a0How comprehensive is the metadata provided in code repositories? Specifically:\n\n\n\nWhat is the adoption of open licenses?\n\nDo research projects include a description?\n\nHow well documented are research projects? (i.e., in terms of installation instructions, requirements and documentation availability\n\n\n\nRQ5:\u00a0What are the most common citation practices among communities?\n\n\nThe dataset has two types of information, for example for one cluster we can say \"ENVRI\", for each RQ you will find \"analysis_envri_rq1.json\" which contains the information extracted using SOMEF and processed to extract the relevant information, and you will find \"results_envri_rq1.json\" which is the calculations of the percentages of each relevant files to the RQ.",
+            "distribution": {
+                "@id": "https://doi.org/10.5281/zenodo.14770578"
+            },
+            "name": "Dataset for \"Good practice versus reality: A landscape analysis of Research Software metadata adoption in European Open Science Clusters\""
+        },
+        {
+            "@id": "ro-crate-preview.html",
+            "@type": "WebPage",
+            "name": "HTML representation of this data."
+        }
+    ]
+}
